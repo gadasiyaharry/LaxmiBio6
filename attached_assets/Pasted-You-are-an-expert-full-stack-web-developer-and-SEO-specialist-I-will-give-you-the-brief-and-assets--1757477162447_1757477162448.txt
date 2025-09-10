@@ -1,0 +1,130 @@
+You are an expert full‑stack web developer and SEO specialist. I will give you the brief and assets for a small corporate website for a laboratory equipment wholesaler/distributor named “Laxmi Biomedicals.” Your task: build a complete, responsive, SEO‑friendly website in PHP + HTML/CSS/JS (no frameworks required) with the pages and functionality described below. Produce clean, well‑commented code and a clear file structure so the owner can upload it to a standard LAMP/LEMP host.
+
+Project brief (use this exactly)
+- Brand name: Laxmi Biomedicals
+- Nature of business: Wholesaler / Distributor
+- Products & Services:
+  - Laboratory Chemicals: Laboratory Reagents, Diagnostic Reagents, Clinical Reagents
+  - Diagnostic Test Kits
+  - Gas Analyzers / Gas Analysis Equipment
+  - Spectrometers
+  - Refractometers
+  - Digital Polarimeters
+  - Microtomes
+- About blurb (use & adapt): “Laxmi Biomedicals provides the best range of laboratory chemicals, diagnostic test kits, gas analyzers, spectrometers, refractometers & digital polarimeters with effective & timely delivery.”
+
+Design requirements
+1. Use the logo color palette (logo file provided). If exact hex codes are not supplied, extract primary and secondary colors from the logo and use those across the site for header, CTAs, and accents. Provide the hex codes you selected.
+2. Clean, modern, professional medical/lab equipment aesthetic. Use readable typography (Google Fonts ok). Mobile-first responsive design.
+3. Accessible contrast, easy navigation, and fast load times.
+
+Pages & features (required)
+1. Homepage (index.php)
+   - Hero section: brief USP text, CTA button “Order on WhatsApp” (opens WhatsApp chat prefilled with product/order message).
+   - Short product category cards (Laboratory Chemicals, Test Kits, Gas Analyzers, Spectrometers, Refractometer, Polarimeter, Microtome). Each card links to Services page anchor or product detail.
+   - About blurb snippet and link to About page.
+   - Contact quick info (phone, email, WhatsApp).
+   - Footer with logo, quick links, contact and social icons.
+
+2. About Us (about.php)
+   - Full company description, mission, values, delivery/lead times, distribution network brief.
+   - Team/contact person and phone/WhatsApp for orders.
+
+3. Services / Products (services.php)
+   - Organized list of product categories with short descriptions.
+   - For each product/category include:
+     - Product name
+     - Short description
+     - Typical specs/uses (bullet list)
+     - Price field (optional — allow “Call/WhatsApp for price”)
+     - “Order on WhatsApp” button for each product that opens WhatsApp to the company number with a prefilled message including product name and a simple order template: customer name, quantity, delivery city, preferred time.
+   - Allow deep links (URL anchor) to each product or category for SEO.
+
+4. Contact (contact.php)
+   - Contact form (name, email, phone, message, product interest) that:
+     - Validates input server-side and client-side.
+     - On submit, either: a) send email to company and b) redirect to WhatsApp chat prefilled with the form data OR provide a confirmation page with a “Confirm and Message on WhatsApp” button that launches the chat with the prefilled order message (choose the best UX but explain behavior).
+   - Show map embed (Google Maps) with company address (placeholder if address not provided).
+   - Display WhatsApp clickable button + company phone and email.
+
+WhatsApp integration details
+- Use the wa.me link format or WhatsApp API link to open chat with a prefilled message.
+- Prefilled message template example: “Hello Laxmi Biomedicals, I want to order: [Product name]. Quantity: [x]. Name: [customer]. City: [city]. Please contact me: [phone].”
+- Ensure proper URL encoding of prefilled text.
+- Buttons should be visible and distinct on mobile and desktop.
+
+Technical & SEO requirements
+- All pages should output valid HTML5 and use semantic tags (header, main, section, article, footer).
+- Use PHP includes for header, footer and metadata to avoid duplication.
+- Create a simple product data source:
+  - Option A: a JSON file (products.json) read by PHP and rendered into services page.
+  - Option B: a simple SQLite or MySQL DB with SQL file for setup.
+  - Indicate recommended approach and provide complete sample data for at least 9 products (cover each category).
+- Meta tags:
+  - Title, meta description, canonical link for each page.
+  - Open Graph tags for homepage and one product example (og:title, og:description, og:image).
+  - Twitter card tags.
+- Structured data:
+  - Add JSON-LD Organization schema for the company.
+  - Add Product schema for at least one product example (use “availability”: “https://schema.org/InStock” or “OutOfStock”).
+- Sitemap:
+  - Provide a static sitemap.xml template listing all pages and lastmod dates.
+- Robots:
+  - Provide robots.txt allowing indexing.
+- Optimizations:
+  - Optimize images (provide example sizes and use srcset).
+  - Minify CSS and JS in production build; include readable source files.
+  - Ensure fast server-side response (no heavy operations on page load).
+
+Code & deliverables
+- Provide a complete file/folder structure and include all files in the deliverable.
+- Use header.php and footer.php included in each page via PHP include/require.
+- Provide clear comments in PHP/HTML/CSS/JS.
+- Provide setup instructions (README.txt) explaining:
+  - How to configure site URL, company WhatsApp number, email SMTP settings for contact form, and map API key.
+  - How to add/modify products (JSON or DB approach).
+  - How to deploy on a typical shared hosting environment and set permissions.
+- Provide sample screenshots/mockups for desktop and mobile (or describe how to test responsiveness with browser dev tools).
+
+Security & validation
+- Sanitize and validate all user inputs server-side.
+- Prevent header injection in contact email.
+- If using a DB, provide prepared statements for queries.
+- Do not store user chat data unless explicitly requested; if stored, explain privacy considerations.
+
+Testing & QA
+- Provide a short checklist for testing:
+  - Links open WhatsApp with correct encoded text.
+  - Contact form validation and email sending.
+  - Responsive behavior at common breakpoints.
+  - Structured data validation (Google Rich Results test).
+  - Page speed suggestions.
+- Provide notes on how to test WhatsApp links for desktop vs mobile.
+
+Optional enhancements (include as suggestions, not mandatory)
+- Admin panel to add/edit products (small PHP CRUD).
+- Cart-like behavior: allow users to add several products then send a single consolidated WhatsApp order message.
+- Multi-language support (English + regional language).
+- Analytics snippet (Google Analytics/GA4) and GTM setup.
+- Live chat widget alternative to WhatsApp.
+
+Required from me before you start
+- Confirmation of the company WhatsApp number to use in links.
+- The logo file (I will attach it) — extract colors from it.
+- Company email and desired display address for Contact page.
+- If you want prices, provide them; otherwise show “Call/WhatsApp for price.”
+
+Output format I expect from you
+- A zip-ready file structure listing (folders & files) plus the primary PHP/HTML/CSS/JS snippets inline in your response (or a link to a GitHub Gist if files are large).
+- The colors (hex) chosen from the logo and the font stack used.
+- A README with setup steps and configurable variables.
+- Example product JSON (or SQL) with at least 9 entries.
+- Example of a WhatsApp URL for one product (fully URL encoded).
+- A short deployment checklist.
+
+Tone for copywriting on the site
+- Professional, concise, trust-building, and action-oriented. Use CTAs like “Order on WhatsApp”, “Request Quote”, “Contact Sales”.
+
+Start now: create the project plan, file structure, sample product JSON (9 items), hex colors from the attached logo (or if logo missing, request it), and a sample homepage PHP + header/footer include snippets showing how the WhatsApp button is implemented (with a fully encoded sample URL). Explain how you will handle contact form -> WhatsApp behavior and where to configure the WhatsApp phone number in the code.
+
+End.
