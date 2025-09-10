@@ -1,0 +1,300 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Advanced UV-Vis Spectrometer",
+      "category": "Spectrometers",
+      "description": "High-precision spectrophotometer for analytical chemistry applications with digital display and data logging capabilities.",
+      "specifications": [
+        "Wavelength range: 190-1100nm",
+        "Bandwidth: 1.5nm",
+        "USB connectivity",
+        "PC software included"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1576671081837-49000212a370",
+      "icon": "satellite-dish",
+      "features": [
+        "UV-Visible range",
+        "Digital display",
+        "Data logging",
+        "High precision"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Digital Refractometer",
+      "category": "Refractometers",
+      "description": "Automatic temperature compensation refractometer with digital display for accurate concentration measurements.",
+      "specifications": [
+        "Measurement range: 0-95% Brix",
+        "Accuracy: ±0.1%",
+        "Auto temperature compensation",
+        "Digital LCD display"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+      "icon": "search",
+      "features": [
+        "Digital display",
+        "Temperature compensation",
+        "Multiple scales",
+        "High accuracy"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Portable Gas Analyzer",
+      "category": "Gas Analyzers",
+      "description": "Multi-gas detection system with real-time monitoring and data logging for environmental analysis.",
+      "specifications": [
+        "Multi-gas detection",
+        "Real-time display",
+        "Data logging",
+        "Portable design"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074",
+      "icon": "wind",
+      "features": [
+        "Portable design",
+        "Multi-gas detection",
+        "Real-time monitoring",
+        "Data storage"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Laboratory Reagent Grade Chemicals",
+      "category": "Laboratory Chemicals",
+      "description": "High purity analytical grade chemicals for laboratory applications including diagnostic and clinical reagents.",
+      "specifications": [
+        "Analytical grade purity",
+        "Certificate of analysis",
+        "Proper packaging",
+        "Long shelf life"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+      "icon": "flask",
+      "features": [
+        "Laboratory reagents",
+        "Diagnostic reagents",
+        "Clinical reagents",
+        "High purity"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Rapid Diagnostic Test Kits",
+      "category": "Diagnostic Test Kits",
+      "description": "Comprehensive range of diagnostic kits for accurate and reliable testing in clinical laboratories.",
+      "specifications": [
+        "Rapid results",
+        "High sensitivity",
+        "Easy to use",
+        "Quality assured"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+      "icon": "kit-medical",
+      "features": [
+        "Rapid test kits",
+        "ELISA kits",
+        "Immunoassay kits",
+        "High accuracy"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Digital Polarimeter",
+      "category": "Digital Polarimeters",
+      "description": "Accurate optical rotation measurement for pharmaceutical and chemical analysis with auto calibration.",
+      "specifications": [
+        "Accuracy: ±0.01°",
+        "Auto calibration",
+        "Digital display",
+        "Temperature control"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1576671081837-49000212a370",
+      "icon": "eye",
+      "features": [
+        "High accuracy",
+        "Digital display",
+        "Auto calibration",
+        "Temperature control"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Precision Microtome",
+      "category": "Microtomes",
+      "description": "Precision cutting instruments for histology and microscopy sample preparation with variable thickness control.",
+      "specifications": [
+        "Section thickness: 0.5-60μm",
+        "Manual operation",
+        "Precision cutting",
+        "Durable construction"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074",
+      "icon": "scissors",
+      "features": [
+        "Manual & automatic",
+        "Precision sectioning",
+        "Variable thickness",
+        "Durable design"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Gas Chromatography System",
+      "category": "Gas Analyzers",
+      "description": "Advanced gas chromatography system for analytical chemistry with high resolution and sensitivity.",
+      "specifications": [
+        "High resolution",
+        "Temperature programming",
+        "Multiple detectors",
+        "Data analysis software"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+      "icon": "activity",
+      "features": [
+        "High resolution",
+        "Multiple detectors",
+        "Data analysis",
+        "Temperature control"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "FTIR Spectrometer",
+      "category": "Spectrometers",
+      "description": "Fourier Transform Infrared spectrometer for molecular identification and quantitative analysis.",
+      "specifications": [
+        "FTIR technology",
+        "Wide spectral range",
+        "High resolution",
+        "Easy operation"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1576671081837-49000212a370",
+      "icon": "radio",
+      "features": [
+        "FTIR technology",
+        "Wide range",
+        "High resolution",
+        "User friendly"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Digital pH Meter",
+      "category": "Laboratory Chemicals",
+      "description": "Professional digital pH meter for accurate pH and temperature measurements in laboratory applications.",
+      "specifications": [
+        "pH range: 0-14",
+        "Accuracy: ±0.01 pH",
+        "Auto temperature compensation",
+        "Calibration memory"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+      "icon": "thermometer",
+      "features": [
+        "High accuracy",
+        "Auto calibration",
+        "Temperature compensation",
+        "Data storage"
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Blood Chemistry Analyzer",
+      "category": "Diagnostic Test Kits",
+      "description": "Automated blood chemistry analyzer for comprehensive metabolic panels and cardiac markers.",
+      "specifications": [
+        "200+ test parameters",
+        "Touch screen interface",
+        "Automated sample handling",
+        "Quality control features"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1582719471384-894fbb16e074",
+      "icon": "heart-pulse",
+      "features": [
+        "Automated testing",
+        "Comprehensive panels",
+        "Quality control",
+        "User friendly"
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Abbe Refractometer",
+      "category": "Refractometers",
+      "description": "Traditional Abbe refractometer for precise refractive index measurements with high optical quality.",
+      "specifications": [
+        "Refractive index range: 1.300-1.700",
+        "Accuracy: ±0.0002",
+        "Built-in thermometer",
+        "Prism protection"
+      ],
+      "price": "Call for Price",
+      "image": "https://images.unsplash.com/photo-1559757175-0eb30cd8c063",
+      "icon": "microscope",
+      "features": [
+        "High precision",
+        "Traditional design",
+        "Temperature measurement",
+        "Durable construction"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Laboratory Chemicals",
+      "description": "High-purity chemicals and reagents for laboratory analysis",
+      "icon": "flask"
+    },
+    {
+      "name": "Diagnostic Test Kits",
+      "description": "Comprehensive diagnostic solutions for clinical testing",
+      "icon": "kit-medical"
+    },
+    {
+      "name": "Gas Analyzers",
+      "description": "Advanced gas analysis equipment for environmental monitoring",
+      "icon": "wind"
+    },
+    {
+      "name": "Spectrometers",
+      "description": "Precision spectroscopy instruments for analytical measurements",
+      "icon": "satellite-dish"
+    },
+    {
+      "name": "Refractometers",
+      "description": "Optical instruments for refractive index measurements",
+      "icon": "search"
+    },
+    {
+      "name": "Digital Polarimeters",
+      "description": "Accurate optical rotation measurement instruments",
+      "icon": "eye"
+    },
+    {
+      "name": "Microtomes",
+      "description": "Precision cutting instruments for sample preparation",
+      "icon": "scissors"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2024-01-01",
+    "totalProducts": 12,
+    "totalCategories": 7,
+    "description": "Complete product catalog for Laxmi Biomedicals laboratory equipment and chemicals"
+  }
+}
