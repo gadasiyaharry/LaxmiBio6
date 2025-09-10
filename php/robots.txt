@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Block sensitive directories
+Disallow: /data/
+Disallow: /includes/
+Disallow: /config.php
+Disallow: /.htaccess
+Disallow: /README.txt
+
+# Allow important files
+Allow: /assets/
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Sitemap location
+Sitemap: https://laxmibiomedicals.com/sitemap.xml
