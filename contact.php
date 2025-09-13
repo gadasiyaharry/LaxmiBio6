@@ -111,7 +111,7 @@ require_once 'includes/header.php';
                 <?php echo icon('whatsapp'); ?> Continue on WhatsApp
             </a>
             <p style="margin-top: 2rem;">
-                <a href="contact.php" style="color: var(--primary-color);">← Send another message</a>
+                <a href="contact.php" style="color: var(--primary-color);"><?php echo icon('arrow-left'); ?> Send another message</a>
             </p>
         </div>
     </section>

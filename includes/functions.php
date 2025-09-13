@@ -162,6 +162,7 @@ function generatePageTitle($page = 'home', $productName = '') {
  * @return string SVG icon HTML
  */
 function getIcon($iconName, $class = '', $size = 24) {
+    // Whitelist of allowed icons for security
     $iconMap = [
         'whatsapp' => 'whatsapp.svg',
         'trophy' => 'trophy.svg', 
@@ -191,29 +192,64 @@ function getIcon($iconName, $class = '', $size = 24) {
         'menu' => 'menu.svg',
         'close' => 'close.svg',
         'facebook' => 'facebook.svg',
-        'linkedin' => 'linkedin.svg'
+        'linkedin' => 'linkedin.svg',
+        'arrow-left' => 'arrow-left.svg'
     ];
     
+    // Validate icon name against whitelist
     if (!isset($iconMap[$iconName])) {
-        return '<span class="icon-placeholder">?</span>';
+        return '<span class="icon-placeholder" aria-hidden="true">?</span>';
     }
     
     $iconFile = $iconMap[$iconName];
-    $iconPath = 'assets/icons/' . $iconFile;
+    $iconPath = __DIR__ . '/../assets/icons/' . $iconFile;
     
+    // Check if file exists
     if (!file_exists($iconPath)) {
-        return '<span class="icon-placeholder">?</span>';
+        return '<span class="icon-placeholder" aria-hidden="true">?</span>';
     }
     
+    // Read and process SVG content
     $svgContent = file_get_contents($iconPath);
     
-    // Add class and size attributes
-    $classAttr = $class ? ' class="' . htmlspecialchars($class) . '"' : '';
-    $svgContent = str_replace(
-        '<svg',
-        '<svg' . $classAttr . ' width="' . $size . '" height="' . $size . '"',
-        $svgContent
-    );
+    // Parse existing SVG attributes to avoid duplicates
+    if (preg_match('/<svg\b([^>]*)>/', $svgContent, $matches)) {
+        $existingAttrs = $matches[1];
+        
+        // Extract existing class attribute if present
+        $existingClasses = [];
+        if (preg_match('/class=["\']([^"\']*)["\']/', $existingAttrs, $classMatches)) {
+            $existingClasses = array_filter(explode(' ', $classMatches[1]));
+        }
+        
+        // Build merged classes: always include 'icon', plus any additional classes
+        $classes = array_merge(['icon'], $existingClasses);
+        if (!empty($class)) {
+            $classes = array_merge($classes, explode(' ', $class));
+        }
+        $classes = array_unique($classes);
+        
+        // Remove existing attributes we're going to replace
+        $cleanAttrs = preg_replace('/\b(?:class|width|height|aria-hidden)=["\'][^"\']*["\']/', '', $existingAttrs);
+        $cleanAttrs = trim(preg_replace('/\s+/', ' ', $cleanAttrs));
+        
+        // Build new attribute string
+        $newAttrs = [];
+        if (!empty($cleanAttrs)) {
+            $newAttrs[] = $cleanAttrs;
+        }
+        $newAttrs[] = 'class="' . htmlspecialchars(implode(' ', $classes)) . '"';
+        $newAttrs[] = 'width="' . (int)$size . '"';
+        $newAttrs[] = 'height="' . (int)$size . '"';
+        $newAttrs[] = 'aria-hidden="true"';
+        
+        // Replace the SVG opening tag
+        $svgContent = preg_replace(
+            '/<svg\b[^>]*>/',
+            '<svg ' . implode(' ', $newAttrs) . '>',
+            $svgContent
+        );
+    }
     
     return $svgContent;
 }

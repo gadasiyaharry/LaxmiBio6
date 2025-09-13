@@ -426,9 +426,16 @@ a:hover {
 }
 
 .product-features li::before {
-  content: "✓";
-  color: var(--secondary-color);
-  font-weight: bold;
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="%2384cc16"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
 }
 
 .product-footer {
@@ -651,6 +658,75 @@ a:hover {
 .gap-2 { gap: var(--spacing-sm); }
 .gap-3 { gap: var(--spacing-md); }
 .gap-4 { gap: var(--spacing-lg); }
+
+/* Icon Styles */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+}
+
+.card-icon-svg {
+  color: var(--primary-color);
+  width: 2rem;
+  height: 2rem;
+}
+
+.text-secondary .icon,
+.text-secondary svg,
+.icon.text-secondary,
+svg.text-secondary {
+  color: var(--secondary-color);
+}
+
+/* Update existing card-icon for SVG compatibility */
+.card-icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Button icon styling */
+.btn svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Social link icon styling */
+.social-link svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Navigation icon styling */
+.whatsapp-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.mobile-menu-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Product category icon styling */
+.product-category svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Footer contact icon styling */
+.footer-section strong svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
 
 /* Loading animation */
 @keyframes spin {
