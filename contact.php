@@ -108,7 +108,7 @@ require_once 'includes/header.php';
             <a href="<?php echo htmlspecialchars($whatsappRedirect); ?>" 
                target="_blank" 
                class="btn btn-secondary">
-                📱 Continue on WhatsApp
+                &#128241; Continue on WhatsApp
             </a>
             <p style="margin-top: 2rem;">
                 <a href="contact.php" style="color: var(--primary-color);">← Send another message</a>
@@ -131,7 +131,7 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="section-header">
                 <div class="text-center mb-4">
-                    <span class="product-category">💬 Get Expert Assistance</span>
+                    <span class="product-category">&#128172; Get Expert Assistance</span>
                 </div>
                 
                 <h1>Contact <span class="text-primary">Our Team</span></h1>
@@ -222,7 +222,7 @@ require_once 'includes/header.php';
                             </div>
                             
                             <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
-                                📧 Send Message & Continue on WhatsApp
+                                &#128231; Send Message & Continue on WhatsApp
                             </button>
                         </form>
                     </div>
@@ -238,7 +238,7 @@ require_once 'includes/header.php';
                         <div style="margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
                                 <div style="width: 3rem; height: 3rem; background: rgba(14, 165, 233, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    <span style="color: var(--primary-color); font-size: 1.5rem;">📞</span>
+                                    <span style="color: var(--primary-color); font-size: 1.5rem;">&#128222;</span>
                                 </div>
                                 <div>
                                     <h4>Phone</h4>
@@ -249,7 +249,7 @@ require_once 'includes/header.php';
                             
                             <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
                                 <div style="width: 3rem; height: 3rem; background: rgba(132, 204, 22, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    <span style="color: var(--secondary-color); font-size: 1.5rem;">📱</span>
+                                    <span style="color: var(--secondary-color); font-size: 1.5rem;">&#128241;</span>
                                 </div>
                                 <div>
                                     <h4>WhatsApp</h4>
@@ -264,7 +264,7 @@ require_once 'includes/header.php';
                             
                             <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
                                 <div style="width: 3rem; height: 3rem; background: rgba(14, 165, 233, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    <span style="color: var(--primary-color); font-size: 1.5rem;">✉️</span>
+                                    <span style="color: var(--primary-color); font-size: 1.5rem;">&#128231;</span>
                                 </div>
                                 <div>
                                     <h4>Email</h4>
@@ -278,7 +278,7 @@ require_once 'includes/header.php';
                             
                             <div style="display: flex; align-items: flex-start; gap: 1rem;">
                                 <div style="width: 3rem; height: 3rem; background: rgba(132, 204, 22, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                                    <span style="color: var(--secondary-color); font-size: 1.5rem;">📍</span>
+                                    <span style="color: var(--secondary-color); font-size: 1.5rem;">&#128205;</span>
                                 </div>
                                 <div>
                                     <h4>Address</h4>
@@ -293,7 +293,7 @@ require_once 'includes/header.php';
                     <!-- Business Hours -->
                     <div class="card" style="margin-bottom: 2rem;">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                            <span style="color: var(--primary-color); font-size: 1.5rem;">⏰</span>
+                            <span style="color: var(--primary-color); font-size: 1.5rem;">&#128336;</span>
                             <h3 style="margin: 0;">Business Hours</h3>
                         </div>
                         <div style="margin-bottom: 1rem;">
@@ -329,7 +329,7 @@ require_once 'includes/header.php';
                            target="_blank" 
                            class="btn btn-secondary" 
                            style="width: 100%;">
-                            📱 Get Instant Quote
+                            &#128241; Get Instant Quote
                         </a>
                     </div>
                 </div>
@@ -350,7 +350,7 @@ require_once 'includes/header.php';
             <div class="card">
                 <div style="background: var(--hover-color); border-radius: 0.75rem; height: 400px; display: flex; align-items: center; justify-content: center;">
                     <div class="text-center">
-                        <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">&#128205;</div>
                         <h3>Interactive Map</h3>
                         <p style="color: var(--text-muted); margin: 0;">
                             <?php echo COMPANY_ADDRESS; ?>

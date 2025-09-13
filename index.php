@@ -23,7 +23,7 @@ foreach ($products as $product) {
     <div class="container">
         <div class="section-header">
             <div class="text-center mb-4">
-                <span class="product-category">🏆 Trusted Laboratory Equipment Supplier</span>
+                <span class="product-category">&#127942; Trusted Laboratory Equipment Supplier</span>
             </div>
             
             <h1>Professional <span class="text-primary">Laboratory Equipment</span> & Chemicals</h1>
@@ -39,10 +39,10 @@ foreach ($products as $product) {
                 $orderUrl = createWhatsAppUrl($orderMessage);
                 ?>
                 <a href="<?php echo $orderUrl; ?>" target="_blank" class="btn btn-primary">
-                    📱 Order on WhatsApp
+                    &#128241; Order on WhatsApp
                 </a>
                 <a href="services.php" class="btn btn-outline">
-                    🔬 View Products
+                    &#128300; View Products
                 </a>
             </div>
             
@@ -85,15 +85,15 @@ foreach ($products as $product) {
                         <?php
                         // Simple icon mapping
                         $icons = [
-                            'Laboratory Chemicals' => '🧪',
-                            'Diagnostic Test Kits' => '🔬',
-                            'Gas Analyzers' => '💨',
-                            'Spectrometers' => '📡',
-                            'Refractometers' => '🔍',
-                            'Digital Polarimeters' => '👁️',
-                            'Microtomes' => '✂️'
+                            'Laboratory Chemicals' => '&#129514;',
+                            'Diagnostic Test Kits' => '&#128300;',
+                            'Gas Analyzers' => '&#128168;',
+                            'Spectrometers' => '&#128225;',
+                            'Refractometers' => '&#128269;',
+                            'Digital Polarimeters' => '&#128065;',
+                            'Microtomes' => '&#9986;'
                         ];
-                        echo isset($icons[$category['name']]) ? $icons[$category['name']] : '⚗️';
+                        echo isset($icons[$category['name']]) ? $icons[$category['name']] : '&#9881;';
                         ?>
                     </div>
                     <h3 class="card-title"><?php echo htmlspecialchars($category['name']); ?></h3>
@@ -115,7 +115,7 @@ foreach ($products as $product) {
             
             <!-- View All Products Card -->
             <div class="card" style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.1) 0%, rgba(132, 204, 22, 0.1) 100%); border: 2px solid rgba(14, 165, 233, 0.2);">
-                <div class="card-icon">📋</div>
+                <div class="card-icon">&#128203;</div>
                 <h3 class="card-title">View All Products</h3>
                 <p class="card-description">Browse our complete catalog of laboratory equipment and chemicals</p>
                 <ul class="product-features">
@@ -161,7 +161,7 @@ foreach ($products as $product) {
                         
                         <button class="btn btn-primary" style="width: 100%;" 
                                 onclick="orderProduct('<?php echo htmlspecialchars($product['name']); ?>', '<?php echo $product['id']; ?>')">
-                            📱 Order Now
+                            &#128241; Order Now
                         </button>
                     </div>
                 </div>
@@ -225,14 +225,14 @@ foreach ($products as $product) {
         
         <div class="d-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
             <div class="card text-center">
-                <div class="card-icon">📞</div>
+                <div class="card-icon">&#128222;</div>
                 <h3>Phone</h3>
                 <p><?php echo COMPANY_PHONE; ?></p>
                 <p style="font-size: 0.9rem; color: var(--text-muted); margin: 0;">Call for immediate assistance</p>
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">📱</div>
+                <div class="card-icon">&#128241;</div>
                 <h3>WhatsApp</h3>
                 <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" target="_blank" class="text-secondary">
                     <?php echo COMPANY_PHONE; ?>
@@ -241,7 +241,7 @@ foreach ($products as $product) {
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">✉️</div>
+                <div class="card-icon">&#128231;</div>
                 <h3>Email</h3>
                 <a href="mailto:<?php echo COMPANY_EMAIL; ?>" class="text-primary">
                     <?php echo COMPANY_EMAIL; ?>

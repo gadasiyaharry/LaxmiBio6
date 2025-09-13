@@ -13,9 +13,9 @@
                     </div>
                     <p>Trusted supplier of high-quality laboratory equipment and chemicals with fast, reliable delivery.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook">📘</a>
-                        <a href="#" class="social-link" title="LinkedIn">💼</a>
-                        <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="social-link" title="WhatsApp" target="_blank">📱</a>
+                        <a href="#" class="social-link" title="Facebook">&#128248;</a>
+                        <a href="#" class="social-link" title="LinkedIn">&#128188;</a>
+                        <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="social-link" title="WhatsApp" target="_blank">&#128241;</a>
                     </div>
                 </div>
                 
@@ -38,10 +38,10 @@
                 
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><strong>📞</strong> <?php echo COMPANY_PHONE; ?></p>
-                    <p><strong>✉️</strong> <?php echo COMPANY_EMAIL; ?></p>
-                    <p><strong>📍</strong> <?php echo COMPANY_ADDRESS; ?></p>
-                    <p><strong>⏰</strong> Mon-Fri: 9AM-6PM<br>Saturday: 9AM-2PM</p>
+                    <p><strong>&#128222;</strong> <?php echo COMPANY_PHONE; ?></p>
+                    <p><strong>&#128231;</strong> <?php echo COMPANY_EMAIL; ?></p>
+                    <p><strong>&#128205;</strong> <?php echo COMPANY_ADDRESS; ?></p>
+                    <p><strong>&#128336;</strong> Mon-Fri: 9AM-6PM<br>Saturday: 9AM-2PM</p>
                 </div>
             </div>
             

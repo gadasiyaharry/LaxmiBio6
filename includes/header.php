@@ -102,7 +102,7 @@ $meta_description = isset($meta_description) ? $meta_description : generateMetaD
                     $whatsapp_url = createWhatsAppUrl($whatsapp_message);
                     ?>
                     <a href="<?php echo $whatsapp_url; ?>" target="_blank" class="whatsapp-btn">
-                        <span>📱</span>
+                        <span>&#128241;</span>
                         <span>WhatsApp</span>
                     </a>
                     <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>

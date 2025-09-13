@@ -9,7 +9,7 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="section-header">
             <div class="text-center mb-4">
-                <span class="product-category">🏆 15+ Years of Excellence</span>
+                <span class="product-category">&#127942; 15+ Years of Excellence</span>
             </div>
             
             <h1>About <span class="text-primary">Laxmi Biomedicals</span></h1>
@@ -99,7 +99,7 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="d-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
             <div class="card">
-                <div class="card-icon">🎯</div>
+                <div class="card-icon">&#127919;</div>
                 <h3>Our Mission</h3>
                 <p>
                     To empower scientific research and healthcare diagnostics by providing reliable access to high-quality 
@@ -110,7 +110,7 @@ require_once 'includes/header.php';
             </div>
             
             <div class="card">
-                <div class="card-icon">⭐</div>
+                <div class="card-icon">&#11088;</div>
                 <h3>Our Vision</h3>
                 <p>
                     To become the most trusted and comprehensive laboratory solutions provider in India, known for our 
@@ -134,25 +134,25 @@ require_once 'includes/header.php';
         
         <div class="product-grid">
             <div class="card text-center">
-                <div class="card-icon">🎯</div>
+                <div class="card-icon">&#127919;</div>
                 <h3>Precision</h3>
                 <p>We provide precise, high-quality laboratory equipment that meets the exact needs of scientific research and diagnostics.</p>
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">❤️</div>
+                <div class="card-icon">&#10084;</div>
                 <h3>Care</h3>
                 <p>We care about our customers' success and provide personalized support to ensure the best outcomes for their projects.</p>
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">⚡</div>
+                <div class="card-icon">&#9889;</div>
                 <h3>Innovation</h3>
                 <p>We stay at the forefront of laboratory technology, offering the latest innovations in scientific instrumentation.</p>
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">🛡️</div>
+                <div class="card-icon">&#128737;</div>
                 <h3>Reliability</h3>
                 <p>Our customers trust us for consistent quality, timely delivery, and dependable service across all interactions.</p>
             </div>
@@ -175,7 +175,7 @@ require_once 'includes/header.php';
                 <div style="margin-bottom: 2rem;">
                     <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="width: 3rem; height: 3rem; background: rgba(14, 165, 233, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <span style="color: var(--primary-color); font-size: 1.5rem;">⏰</span>
+                            <span style="color: var(--primary-color); font-size: 1.5rem;">&#128336;</span>
                         </div>
                         <div>
                             <h4>Fast Delivery</h4>
@@ -188,7 +188,7 @@ require_once 'includes/header.php';
                     
                     <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="width: 3rem; height: 3rem; background: rgba(132, 204, 22, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <span style="color: var(--secondary-color); font-size: 1.5rem;">🛡️</span>
+                            <span style="color: var(--secondary-color); font-size: 1.5rem;">&#128737;</span>
                         </div>
                         <div>
                             <h4>Quality Guaranteed</h4>
@@ -201,7 +201,7 @@ require_once 'includes/header.php';
                     
                     <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
                         <div style="width: 3rem; height: 3rem; background: rgba(14, 165, 233, 0.1); border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <span style="color: var(--primary-color); font-size: 1.5rem;">👥</span>
+                            <span style="color: var(--primary-color); font-size: 1.5rem;">&#128101;</span>
                         </div>
                         <div>
                             <h4>Expert Team</h4>
@@ -250,7 +250,7 @@ require_once 'includes/header.php';
             $contactUrl = createWhatsAppUrl($contactMessage);
             ?>
             <a href="<?php echo $contactUrl; ?>" target="_blank" class="btn btn-secondary">
-                📱 Contact on WhatsApp
+                &#128241; Contact on WhatsApp
             </a>
             <a href="contact.php" class="btn btn-outline">
                 Get Detailed Quote

@@ -35,7 +35,7 @@ if (!empty($searchTerm)) {
     <div class="container">
         <div class="section-header">
             <div class="text-center mb-4">
-                <span class="product-category">🔬 500+ Premium Products</span>
+                <span class="product-category">&#128300; 500+ Premium Products</span>
             </div>
             
             <h1>Laboratory <span class="text-primary">Equipment</span> & Products</h1>
@@ -56,7 +56,7 @@ if (!empty($searchTerm)) {
                            value="<?php echo htmlspecialchars($searchTerm); ?>"
                            class="form-control" 
                            style="padding-left: 3rem; font-size: 1.125rem;">
-                    <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.25rem;">🔍</span>
+                    <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.25rem;">&#128269;</span>
                 </form>
             </div>
         </div>
@@ -122,7 +122,7 @@ if (!empty($searchTerm)) {
         <!-- Products Grid -->
         <?php if (empty($filteredProducts)): ?>
             <div class="card text-center" style="padding: 3rem; margin: 2rem auto; max-width: 500px;">
-                <div style="font-size: 4rem; margin-bottom: 1rem;">🔍</div>
+                <div style="font-size: 4rem; margin-bottom: 1rem;">&#128269;</div>
                 <h3>No products found</h3>
                 <p style="color: var(--text-muted); margin-bottom: 2rem;">
                     Try adjusting your search terms or browse different categories
@@ -156,14 +156,14 @@ if (!empty($searchTerm)) {
                                 <?php if (!empty($product['specifications'])): ?>
                                     <button class="specs-btn" 
                                             onclick="showSpecs('<?php echo htmlspecialchars($product['name']); ?>', <?php echo htmlspecialchars(json_encode($product['specifications'])); ?>)">
-                                        📋 Specs
+                                        &#128203; Specs
                                     </button>
                                 <?php endif; ?>
                             </div>
                             
                             <button class="btn btn-secondary" style="width: 100%;" 
                                     onclick="orderProduct('<?php echo htmlspecialchars($product['name']); ?>', '<?php echo $product['id']; ?>')">
-                                📱 Order on WhatsApp
+                                &#128241; Order on WhatsApp
                             </button>
                         </div>
                     </div>
