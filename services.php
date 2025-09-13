@@ -35,7 +35,7 @@ if (!empty($searchTerm)) {
     <div class="container">
         <div class="section-header">
             <div class="text-center mb-4">
-                <span class="product-category">&#128300; 500+ Premium Products</span>
+                <span class="product-category"><?php echo icon('package'); ?> 500+ Premium Products</span>
             </div>
             
             <h1>Laboratory <span class="text-primary">Equipment</span> & Products</h1>
@@ -56,7 +56,7 @@ if (!empty($searchTerm)) {
                            value="<?php echo htmlspecialchars($searchTerm); ?>"
                            class="form-control" 
                            style="padding-left: 3rem; font-size: 1.125rem;">
-                    <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.25rem;">&#128269;</span>
+                    <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.25rem;"><?php echo icon('search'); ?></span>
                 </form>
             </div>
         </div>

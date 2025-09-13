@@ -13,9 +13,9 @@
                     </div>
                     <p>Trusted supplier of high-quality laboratory equipment and chemicals with fast, reliable delivery.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook">&#128248;</a>
-                        <a href="#" class="social-link" title="LinkedIn">&#128188;</a>
-                        <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="social-link" title="WhatsApp" target="_blank">&#128241;</a>
+                        <a href="#" class="social-link" title="Facebook"><?php echo icon('facebook'); ?></a>
+                        <a href="#" class="social-link" title="LinkedIn"><?php echo icon('linkedin'); ?></a>
+                        <a href="https://wa.me/<?php echo COMPANY_WHATSAPP; ?>" class="social-link" title="WhatsApp" target="_blank"><?php echo icon('whatsapp'); ?></a>
                     </div>
                 </div>
                 
@@ -38,10 +38,10 @@
                 
                 <div class="footer-section">
                     <h4>Contact Info</h4>
-                    <p><strong>&#128222;</strong> <?php echo COMPANY_PHONE; ?></p>
-                    <p><strong>&#128231;</strong> <?php echo COMPANY_EMAIL; ?></p>
-                    <p><strong>&#128205;</strong> <?php echo COMPANY_ADDRESS; ?></p>
-                    <p><strong>&#128336;</strong> Mon-Fri: 9AM-6PM<br>Saturday: 9AM-2PM</p>
+                    <p><strong><?php echo icon('phone'); ?></strong> <?php echo COMPANY_PHONE; ?></p>
+                    <p><strong><?php echo icon('email'); ?></strong> <?php echo COMPANY_EMAIL; ?></p>
+                    <p><strong><?php echo icon('location'); ?></strong> <?php echo COMPANY_ADDRESS; ?></p>
+                    <p><strong><?php echo icon('clock'); ?></strong> Mon-Fri: 9AM-6PM<br>Saturday: 9AM-2PM</p>
                 </div>
             </div>
             

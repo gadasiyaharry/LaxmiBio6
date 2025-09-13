@@ -153,4 +153,78 @@ function generatePageTitle($page = 'home', $productName = '') {
             return "{$siteName} - Laboratory Equipment Wholesaler & Distributor";
     }
 }
+
+/**
+ * Get SVG icon by name
+ * @param string $iconName - Name of the icon
+ * @param string $class - Additional CSS classes
+ * @param int $size - Icon size (default: 24)
+ * @return string SVG icon HTML
+ */
+function getIcon($iconName, $class = '', $size = 24) {
+    $iconMap = [
+        'whatsapp' => 'whatsapp.svg',
+        'trophy' => 'trophy.svg', 
+        'package' => 'package.svg',
+        'phone' => 'phone.svg',
+        'email' => 'email.svg',
+        'location' => 'location.svg',
+        'search' => 'search.svg',
+        'clock' => 'clock.svg',
+        'check' => 'check.svg',
+        'chemicals' => 'chemicals.svg',
+        'computer' => 'computer.svg',
+        'spectrometers' => 'computer.svg',
+        'scissors' => 'scissors.svg',
+        'microtomes' => 'scissors.svg',
+        'gear' => 'gear.svg',
+        'folder' => 'folder.svg',
+        'lightbulb' => 'lightbulb.svg',
+        'star' => 'star.svg',
+        'heart' => 'heart.svg',
+        'bolt' => 'bolt.svg',
+        'innovation' => 'bolt.svg',
+        'wrench' => 'wrench.svg',
+        'users' => 'users.svg',
+        'globe' => 'globe.svg',
+        'chat' => 'chat.svg',
+        'menu' => 'menu.svg',
+        'close' => 'close.svg',
+        'facebook' => 'facebook.svg',
+        'linkedin' => 'linkedin.svg'
+    ];
+    
+    if (!isset($iconMap[$iconName])) {
+        return '<span class="icon-placeholder">?</span>';
+    }
+    
+    $iconFile = $iconMap[$iconName];
+    $iconPath = 'assets/icons/' . $iconFile;
+    
+    if (!file_exists($iconPath)) {
+        return '<span class="icon-placeholder">?</span>';
+    }
+    
+    $svgContent = file_get_contents($iconPath);
+    
+    // Add class and size attributes
+    $classAttr = $class ? ' class="' . htmlspecialchars($class) . '"' : '';
+    $svgContent = str_replace(
+        '<svg',
+        '<svg' . $classAttr . ' width="' . $size . '" height="' . $size . '"',
+        $svgContent
+    );
+    
+    return $svgContent;
+}
+
+/**
+ * Get inline icon for simple usage
+ * @param string $iconName - Name of the icon  
+ * @param string $class - Additional CSS classes
+ * @return string Inline SVG icon
+ */
+function icon($iconName, $class = 'icon') {
+    return getIcon($iconName, $class, 24);
+}
 ?>

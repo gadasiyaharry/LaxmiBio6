@@ -9,7 +9,7 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="section-header">
             <div class="text-center mb-4">
-                <span class="product-category">&#127942; 15+ Years of Excellence</span>
+                <span class="product-category"><?php echo icon('trophy'); ?> 15+ Years of Excellence</span>
             </div>
             
             <h1>About <span class="text-primary">Laxmi Biomedicals</span></h1>
@@ -62,21 +62,21 @@ require_once 'includes/header.php';
                 
                 <div style="margin-top: 2rem;">
                     <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="color: var(--secondary-color); font-size: 1.25rem;">✓</span>
+                        <?php echo icon('check', 'text-secondary'); ?>
                         <div>
                             <h4 style="margin-bottom: 0.5rem;">Quality Assurance</h4>
                             <p style="margin: 0; color: var(--text-muted);">Every product undergoes rigorous quality checks before delivery</p>
                         </div>
                     </div>
                     <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
-                        <span style="color: var(--secondary-color); font-size: 1.25rem;">✓</span>
+                        <?php echo icon('check', 'text-secondary'); ?>
                         <div>
                             <h4 style="margin-bottom: 0.5rem;">Expert Support</h4>
                             <p style="margin: 0; color: var(--text-muted);">Technical consultation and after-sales support from experienced professionals</p>
                         </div>
                     </div>
                     <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                        <span style="color: var(--secondary-color); font-size: 1.25rem;">✓</span>
+                        <?php echo icon('check', 'text-secondary'); ?>
                         <div>
                             <h4 style="margin-bottom: 0.5rem;">Nationwide Network</h4>
                             <p style="margin: 0; color: var(--text-muted);">Extensive distribution network ensuring timely delivery across India</p>
@@ -99,7 +99,7 @@ require_once 'includes/header.php';
     <div class="container">
         <div class="d-grid" style="grid-template-columns: 1fr 1fr; gap: 2rem;">
             <div class="card">
-                <div class="card-icon">&#127919;</div>
+                <div class="card-icon"><?php echo icon('lightbulb', 'card-icon-svg'); ?></div>
                 <h3>Our Mission</h3>
                 <p>
                     To empower scientific research and healthcare diagnostics by providing reliable access to high-quality 
@@ -110,7 +110,7 @@ require_once 'includes/header.php';
             </div>
             
             <div class="card">
-                <div class="card-icon">&#11088;</div>
+                <div class="card-icon"><?php echo icon('star', 'card-icon-svg'); ?></div>
                 <h3>Our Vision</h3>
                 <p>
                     To become the most trusted and comprehensive laboratory solutions provider in India, known for our 
@@ -134,19 +134,19 @@ require_once 'includes/header.php';
         
         <div class="product-grid">
             <div class="card text-center">
-                <div class="card-icon">&#127919;</div>
+                <div class="card-icon"><?php echo icon('lightbulb', 'card-icon-svg'); ?></div>
                 <h3>Precision</h3>
                 <p>We provide precise, high-quality laboratory equipment that meets the exact needs of scientific research and diagnostics.</p>
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">&#10084;</div>
+                <div class="card-icon"><?php echo icon('heart', 'card-icon-svg'); ?></div>
                 <h3>Care</h3>
                 <p>We care about our customers' success and provide personalized support to ensure the best outcomes for their projects.</p>
             </div>
             
             <div class="card text-center">
-                <div class="card-icon">&#9889;</div>
+                <div class="card-icon"><?php echo icon('bolt', 'card-icon-svg'); ?></div>
                 <h3>Innovation</h3>
                 <p>We stay at the forefront of laboratory technology, offering the latest innovations in scientific instrumentation.</p>
             </div>

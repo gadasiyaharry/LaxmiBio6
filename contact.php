@@ -99,7 +99,7 @@ require_once 'includes/header.php';
     <section class="section" style="min-height: 80vh; display: flex; align-items: center;">
         <div class="container text-center">
             <div style="width: 4rem; height: 4rem; background: var(--secondary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; color: white; font-size: 2rem;">
-                ✓
+                <?php echo icon('check'); ?>
             </div>
             <h1>Message Sent Successfully!</h1>
             <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2rem;">
@@ -108,7 +108,7 @@ require_once 'includes/header.php';
             <a href="<?php echo htmlspecialchars($whatsappRedirect); ?>" 
                target="_blank" 
                class="btn btn-secondary">
-                &#128241; Continue on WhatsApp
+                <?php echo icon('whatsapp'); ?> Continue on WhatsApp
             </a>
             <p style="margin-top: 2rem;">
                 <a href="contact.php" style="color: var(--primary-color);">← Send another message</a>
@@ -131,7 +131,7 @@ require_once 'includes/header.php';
         <div class="container">
             <div class="section-header">
                 <div class="text-center mb-4">
-                    <span class="product-category">&#128172; Get Expert Assistance</span>
+                    <span class="product-category"><?php echo icon('chat'); ?> Get Expert Assistance</span>
                 </div>
                 
                 <h1>Contact <span class="text-primary">Our Team</span></h1>
