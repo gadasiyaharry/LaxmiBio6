@@ -1,6 +1,6 @@
 # Overview
 
-This is a full-stack web application for Laxmi Biomedicals, a laboratory equipment wholesaler and distributor. The application serves as a corporate website showcasing their product catalog including laboratory chemicals, diagnostic test kits, gas analyzers, spectrometers, refractometers, digital polarimeters, and microtomes. The site features a modern, professional design with comprehensive product listings, company information, and integrated WhatsApp ordering functionality for seamless customer engagement.
+This is a PHP-based corporate website for Laxmi Biomedicals, a laboratory equipment wholesaler and distributor. The website serves as a professional showcase for their product catalog including laboratory chemicals, diagnostic test kits, gas analyzers, spectrometers, refractometers, digital polarimeters, and microtomes. The site features a modern, professional design with comprehensive product listings, company information, and integrated WhatsApp ordering functionality for seamless customer engagement.
 
 # User Preferences
 
@@ -8,65 +8,75 @@ Preferred communication style: Simple, everyday language.
 
 # System Architecture
 
-## Frontend Architecture
-The client uses a React-based Single Page Application (SPA) built with Vite as the build tool. The architecture follows modern React patterns:
+## PHP Website Architecture
+The website is built using pure PHP with modern web standards:
 
-- **Component Library**: Utilizes shadcn/ui components built on Radix UI primitives for consistent, accessible UI components
-- **Styling**: Tailwind CSS with custom design system variables for theming and responsive design
-- **Routing**: Wouter for lightweight client-side routing with pages for Home, About, Services, and Contact
-- **State Management**: TanStack Query (React Query) for server state management and API data fetching
-- **Form Handling**: React Hook Form with Zod validation for type-safe form management
-- **SEO**: React Helmet for dynamic meta tags and social media optimization
+- **Template System**: PHP includes for header, footer, and reusable functions
+- **Styling**: Custom CSS with professional medical/lab equipment design using company brand colors
+- **Data Storage**: JSON-based product catalog with PHP file operations
+- **Form Processing**: Server-side PHP form validation and processing
+- **SEO**: Complete meta tags, structured data, and search engine optimization
 
-## Backend Architecture
-The server follows a REST API design pattern using Express.js:
+## Contact Information
+- **Phone**: +91 96671 52373
+- **WhatsApp**: 919667152373
+- **Email**: orders@laxmibiomedicals.com
+- **Address**: Ganesh nagar, Near RTO office, Bharatpur (Rajasthan) - 321001
 
-- **API Layer**: Express.js with structured route handling in `/server/routes.ts`
-- **Data Storage**: In-memory storage implementation with interface-based design for easy database migration
-- **Type Safety**: Shared TypeScript schemas between client and server using Zod validation
-- **Development Setup**: Vite integration for hot module replacement in development mode
+# File Structure
 
-## Data Storage Solutions
-Currently implements in-memory storage with a well-defined interface:
+## Core PHP Files
+- **index.php**: Homepage with hero section and product categories
+- **about.php**: Company information and story
+- **services.php**: Product catalog with filtering and search
+- **contact.php**: Contact form with WhatsApp integration
+- **config.php**: Configuration settings and constants
 
-- **Storage Interface**: `IStorage` interface defines contracts for user, product, and contact operations
-- **Memory Implementation**: `MemStorage` class provides immediate functionality with sample data
-- **Database Ready**: Drizzle ORM configuration with PostgreSQL schema definitions prepared for production database integration
-- **Schema Management**: Shared schema definitions in `/shared/schema.ts` using Drizzle with Zod integration
+## Templates and Functions
+- **includes/header.php**: Header template with navigation and SEO tags
+- **includes/footer.php**: Footer template with company links
+- **includes/functions.php**: Helper functions for WhatsApp, validation, and utilities
 
-## Authentication and Authorization
-Basic user schema is defined but authentication is not currently implemented. The foundation exists for future authentication integration with user management capabilities.
+## Assets and Data
+- **assets/css/style.css**: Professional styling with brand colors
+- **assets/js/main.js**: JavaScript for interactive features
+- **assets/images/**: Company logo and favicon
+- **products.json**: Product catalog database
+
+## SEO and Configuration
+- **sitemap.xml**: Search engine sitemap
+- **robots.txt**: Search engine crawling instructions
+- **.htaccess**: Server configuration and security
 
 # External Dependencies
 
-## Database Integration
-- **Drizzle ORM**: Configured for PostgreSQL with migration support
-- **Neon Database**: Serverless PostgreSQL connection ready for deployment
-- **Schema Management**: Automated migrations through `drizzle-kit`
-
-## UI Framework and Components
-- **React**: Core frontend framework with TypeScript support
-- **shadcn/ui**: Complete component library built on Radix UI primitives
-- **Radix UI**: Accessible component primitives for complex UI elements
-- **Tailwind CSS**: Utility-first CSS framework with custom design system
+## Design and Branding
+- **Company Logo**: Official Laxmi Biomedicals logo used throughout
+- **Color Scheme**: Professional medical blue (#0ea5e9) and green (#84cc16) from company branding
+- **Google Fonts**: Inter font family for professional typography
+- **Responsive Design**: Mobile-first responsive layout
 
 ## Communication Services
-- **WhatsApp Integration**: Direct messaging functionality with pre-filled order templates
-- **Contact Forms**: Email integration ready for SMTP service connection
+- **WhatsApp Integration**: Direct messaging with pre-filled product order templates
+- **Contact Forms**: PHP-based form processing with validation
+- **Email Integration**: SMTP configuration for form notifications
 
-## Development and Build Tools
-- **Vite**: Modern build tool with hot module replacement
-- **TypeScript**: Type safety across the entire application
-- **ESBuild**: Fast bundling for production builds
-- **Replit Integration**: Development environment optimization with error overlays
+## SEO and Marketing
+- **Meta Tags**: Complete meta tags for all pages
+- **Open Graph**: Social media sharing optimization
+- **JSON-LD**: Structured data for search engines
+- **Sitemap**: XML sitemap for search engine indexing
 
-## Design and Assets
-- **Google Fonts**: Typography integration for professional appearance
-- **Unsplash**: Placeholder images for product showcases
-- **Lucide React**: Icon system for consistent visual elements
-- **React Icons**: Additional icon sets including social media icons
+# Hosting Requirements
 
-## Form and Data Validation
-- **Zod**: Runtime type validation and schema definition
-- **React Hook Form**: Performant form management with validation integration
-- **TanStack Query**: Server state synchronization and caching
+## Server Requirements
+- PHP 7.4 or higher
+- Web server (Apache/Nginx)
+- Write permissions for data directory
+- HTTPS support recommended
+
+## Deployment Ready
+- All files optimized for standard PHP hosting
+- No database required (uses JSON storage)
+- Compatible with shared hosting platforms like Hostinger
+- Security headers and .htaccess configuration included
