@@ -10,10 +10,10 @@ define('SITE_NAME', 'Laxmi Biomedicals');
 define('SITE_DESCRIPTION', 'Laxmi Biomedicals provides the best range of laboratory chemicals, diagnostic test kits, gas analyzers, spectrometers, refractometers & digital polarimeters with effective & timely delivery.');
 
 // Contact Information
-define('COMPANY_PHONE', '+91 98765 43210');
-define('COMPANY_WHATSAPP', '919876543210'); // Without + or spaces
+define('COMPANY_PHONE', '+91 96671 52373');
+define('COMPANY_WHATSAPP', '919667152373'); // Without + or spaces
 define('COMPANY_EMAIL', 'orders@laxmibiomedicals.com');
-define('COMPANY_ADDRESS', 'Industrial Area, Phase 2<br>Laboratory Equipment Hub<br>City, State 123456');
+define('COMPANY_ADDRESS', 'Ganesh nagar, Near RTO office<br>Bharatpur (Rajasthan) - 321001');
 
 // SMTP Configuration for contact form (update with your SMTP settings)
 define('SMTP_HOST', 'smtp.gmail.com');

@@ -36,7 +36,8 @@ $meta_description = isset($meta_description) ? $meta_description : generateMetaD
     <meta name="twitter:image" content="<?php echo SITE_URL; ?>/assets/images/logo-og.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/logo.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,8 +82,8 @@ $meta_description = isset($meta_description) ? $meta_description : generateMetaD
         <div class="container">
             <div class="header-content">
                 <a href="index.php" class="logo">
-                    <div class="logo-icon">+</div>
-                    <div class="logo-text">
+                    <img src="assets/images/logo.png" alt="<?php echo SITE_NAME; ?>" style="height: 60px; width: auto;">
+                    <div class="logo-text" style="margin-left: 0.5rem;">
                         <h1><?php echo SITE_NAME; ?></h1>
                         <p class="logo-tagline">Laboratory Equipment Specialists</p>
                     </div>

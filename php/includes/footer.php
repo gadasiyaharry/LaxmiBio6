@@ -5,8 +5,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <div class="logo-icon">+</div>
-                        <div class="logo-text">
+                        <img src="assets/images/logo.png" alt="<?php echo SITE_NAME; ?>" style="height: 50px; width: auto;">
+                        <div class="logo-text" style="margin-left: 0.5rem;">
                             <h4><?php echo SITE_NAME; ?></h4>
                             <p>Laboratory Equipment Specialists</p>
                         </div>
