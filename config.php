@@ -5,7 +5,7 @@
  */
 
 // Website Configuration
-define('SITE_URL', 'https://laxmibiomedicals.com');
+define('SITE_URL', 'https://laxmibiomedicals.com/');
 define('SITE_NAME', 'Laxmi Biomedicals');
 define('SITE_DESCRIPTION', 'Laxmi Biomedicals provides the best range of laboratory chemicals, diagnostic test kits, gas analyzers, spectrometers, refractometers & digital polarimeters with effective & timely delivery.');
 
